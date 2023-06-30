@@ -11,9 +11,11 @@ import XCTest
 class contentView_가_보일_때: XCTestCase {
 
     private var app: XCUIApplication!
+    private var contentViewPage: ContentViewPage!
     
     override func setUp() { // 'class'(static) 빼고 작성 - instance method만 다룸
         app = XCUIApplication()
+        contentViewPage = ContentViewPage(app: app)
         continueAfterFailure = false // fail시 중단
         app.launch()
     }
@@ -23,17 +25,17 @@ class contentView_가_보일_때: XCTestCase {
     
     func test_totalTextField_가_기본값을_가져야_함() {
 
-        let totalTextField = app.textFields["totalTextField"]
+        //let totalTextField = contentViewPage.totalTextField
         /*
          TextField("Enter total", text: $total)
              .accessibilityIdentifier("totalTextField") - 이거로 연결고리 만들어줌
          */
-        XCTAssertEqual(totalTextField.value as! String, "Enter total")
+        XCTAssertEqual(contentViewPage.totalTextField.value as! String, "Enter total")
     }
     
     func test_기본_tip_옵션이_20퍼센트_여야함() {
-        let tipPercentageSegmentedControl = app.segmentedControls["tipPercentageSegmentedControl"]
-        let segmentedControlButton = tipPercentageSegmentedControl.buttons.element(boundBy: 1)
+        //let tipPercentageSegmentedControl = app.segmentedControls["tipPercentageSegmentedControl"]
+        let segmentedControlButton = contentViewPage.tipPercentageSegmentedControl.buttons.element(boundBy: 1)
 
         XCTAssertEqual(segmentedControlButton.label, "20%") // Text 확인
         XCTAssertTrue(segmentedControlButton.isSelected) // 선택되어있는지 확인
@@ -55,29 +57,36 @@ class contentView_가_보일_때: XCTestCase {
 class calculate_팁_버튼이_눌릴때_with_invalid_input: XCTestCase {
     
     private var app: XCUIApplication!
-    
+    private var contentViewPage: ContentViewPage!
+
     override func setUp() {
         app = XCUIApplication()
+        contentViewPage = ContentViewPage(app: app)
         continueAfterFailure = false
         app.launch()
-        
-        let totalTextField = app.textFields["totalTextField"]
+
+        //let totalTextField = app.textFields["totalTextField"]
+        let totalTextField = contentViewPage.totalTextField
         totalTextField.tap()
         totalTextField.typeText("-100")
 
         //context가 팁 버튼 눌릴때임!
-        let calculateTipButton = app.buttons["calculateTipButton"]
+        //let calculateTipButton = app.buttons["calculateTipButton"]
+        let calculateTipButton = contentViewPage.calculateTipButton
         calculateTipButton.tap()
     }
     
     func test_잘못입력시_tip레이블_지워져야함() {
-        let tipText = app.staticTexts["tipText"]
+        
+        //let tipText = app.staticTexts["tipText"]
+        let tipText = contentViewPage.tipText
         let _ = tipText.waitForExistence(timeout: 0.5)
         XCTAssertEqual(tipText.label, "")
     }
 
     func test_잘못입력시_에러메시지_보여야함() {
-        let messageText = app.staticTexts["messageText"]
+        //let messageText = app.staticTexts["messageText"]
+        let messageText = contentViewPage.messageText
         let _ = messageText.waitForExistence(timeout: 0.5)
         XCTAssertEqual(messageText.label, "Invalid Input")
     }
@@ -88,23 +97,26 @@ class calculate_팁_버튼이_눌릴때_with_invalid_input: XCTestCase {
 class calculate_팁_버튼이_눌릴때_with_valid_input: XCTestCase {
 
     private var app: XCUIApplication!
+    private var contentViewPage: ContentViewPage!
+
     
     override func setUp() {
         app = XCUIApplication()
+        contentViewPage = ContentViewPage(app: app)
         continueAfterFailure = false
         app.launch()
         
-        let totalTextField = app.textFields["totalTextField"]
+        let totalTextField = contentViewPage.totalTextField
         totalTextField.tap()
         totalTextField.typeText("100")
 
         //context가 팁 버튼 눌릴때임!
-        let calculateTipButton = app.buttons["calculateTipButton"]
+        let calculateTipButton = contentViewPage.calculateTipButton
         calculateTipButton.tap()
     }
     
     func test_tip이_화면에_보여야함() {
-        let tipText = app.staticTexts["tipText"]
+        let tipText = contentViewPage.tipText
         let _ = tipText.waitForExistence(timeout: 0.5) // 시간 조금 걸리니까 버튼 누르는 시간 기다림
         XCTAssertEqual(tipText.label, "$20.00")
     }
