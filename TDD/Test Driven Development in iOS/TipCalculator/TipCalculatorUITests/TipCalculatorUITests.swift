@@ -46,7 +46,46 @@ class contentView_가_보일_때: XCTestCase {
 }
 
 
-class calculate_팁_버튼이_눌릴때: XCTestCase {
+
+// setup에서 이미 100으로 코드 만든 경우에 어떻게 할까?
+// -> class를 나누거나
+// -> 각 테스트 별로 넣어줌
+// 여기선 각 테스트별로 입력하는걸 넣자
+// -> 리팩토링 ㄱㄱ 클래스를 나누자 (valid Input vs invliad input)
+class calculate_팁_버튼이_눌릴때_with_invalid_input: XCTestCase {
+    
+    private var app: XCUIApplication!
+    
+    override func setUp() {
+        app = XCUIApplication()
+        continueAfterFailure = false
+        app.launch()
+        
+        let totalTextField = app.textFields["totalTextField"]
+        totalTextField.tap()
+        totalTextField.typeText("-100")
+
+        //context가 팁 버튼 눌릴때임!
+        let calculateTipButton = app.buttons["calculateTipButton"]
+        calculateTipButton.tap()
+    }
+    
+    func test_잘못입력시_tip레이블_지워져야함() {
+        let tipText = app.staticTexts["tipText"]
+        let _ = tipText.waitForExistence(timeout: 0.5)
+        XCTAssertEqual(tipText.label, "")
+    }
+
+    func test_잘못입력시_에러메시지_보여야함() {
+        let messageText = app.staticTexts["messageText"]
+        let _ = messageText.waitForExistence(timeout: 0.5)
+        XCTAssertEqual(messageText.label, "Invalid Input")
+    }
+
+}
+
+
+class calculate_팁_버튼이_눌릴때_with_valid_input: XCTestCase {
 
     private var app: XCUIApplication!
     
@@ -66,8 +105,12 @@ class calculate_팁_버튼이_눌릴때: XCTestCase {
     
     func test_tip이_화면에_보여야함() {
         let tipText = app.staticTexts["tipText"]
-        tipText.waitForExistence(timeout: 0.5) // 시간 조금 걸리니까 버튼 누르는 시간 기다림
-        
+        let _ = tipText.waitForExistence(timeout: 0.5) // 시간 조금 걸리니까 버튼 누르는 시간 기다림
         XCTAssertEqual(tipText.label, "$20.00")
     }
 }
+
+
+// ui object 접근할때마다 이름으로 접근하고 있음 (textFields["totalTextField"])
+// 나중에 문제 생길 가능성이 있음!
+// pageObject pattern을 사용하자
