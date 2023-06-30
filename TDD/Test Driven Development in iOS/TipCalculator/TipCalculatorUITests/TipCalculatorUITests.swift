@@ -134,9 +134,8 @@ class calculate_팁_버튼이_눌릴때_with_valid_input: XCTestCase {
         
         app/*@START_MENU_TOKEN@*/.buttons["calculateTipButton"]/*[[".buttons[\"Calculate Tip\"]",".buttons[\"calculateTipButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         let tipText = app.staticTexts["tipText"]
-        tipText.waitForExistence(timeout: 0.5)
+        let _ = tipText.waitForExistence(timeout: 0.5)
         XCTAssertEqual(tipText.label, "$10.00")
-                
     }
 }
 
