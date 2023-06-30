@@ -106,6 +106,9 @@ class calculate_팁_버튼이_눌릴때_with_valid_input: XCTestCase {
         continueAfterFailure = false
         app.launch()
         
+    }
+    
+    func test_tip이_화면에_보여야함() {
         let totalTextField = contentViewPage.totalTextField
         totalTextField.tap()
         totalTextField.typeText("100")
@@ -113,12 +116,27 @@ class calculate_팁_버튼이_눌릴때_with_valid_input: XCTestCase {
         //context가 팁 버튼 눌릴때임!
         let calculateTipButton = contentViewPage.calculateTipButton
         calculateTipButton.tap()
-    }
-    
-    func test_tip이_화면에_보여야함() {
+
         let tipText = contentViewPage.tipText
         let _ = tipText.waitForExistence(timeout: 0.5) // 시간 조금 걸리니까 버튼 누르는 시간 기다림
         XCTAssertEqual(tipText.label, "$20.00")
+    }
+    
+    // 하단의 레코드 버튼으로 테스트코드를 작성할 수 있다.
+    func test_record테스트_10퍼센트_100토탈_팁은() {
+        
+        
+        let app = XCUIApplication()
+        let totaltextfieldTextField = app/*@START_MENU_TOKEN@*/.textFields["totalTextField"]/*[[".textFields[\"Enter total\"]",".textFields[\"totalTextField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        totaltextfieldTextField.tap()
+        totaltextfieldTextField.typeText("100")
+        app/*@START_MENU_TOKEN@*/.buttons["10%"]/*[[".segmentedControls[\"tipPercentageSegmentedControl\"].buttons[\"10%\"]",".buttons[\"10%\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        app/*@START_MENU_TOKEN@*/.buttons["calculateTipButton"]/*[[".buttons[\"Calculate Tip\"]",".buttons[\"calculateTipButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let tipText = app.staticTexts["tipText"]
+        tipText.waitForExistence(timeout: 0.5)
+        XCTAssertEqual(tipText.label, "$10.00")
+                
     }
 }
 
