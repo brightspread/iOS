@@ -35,7 +35,7 @@ struct ContentView: View {
                     .accessibilityIdentifier("tipPercentageSegmentedControl")
                 
                 
-                Button("Calculate Tip") {
+                Button {
                     guard let total = Double(self.total) else {
                         message = "Invalid Input"
                         return
@@ -53,7 +53,12 @@ struct ContentView: View {
                         message = error.localizedDescription
                     }
                     
-                }.padding(.top, 20)
+                } label: {
+                    Text("Calculate Tip") // 원래 Button(" ~ ") 였으나, 테스트를 위해서 바꿈
+                        .accessibilityIdentifier("calculateTipButton")
+                }
+                .padding(.top, 20)
+                    
                 
                 Text(message)
                     .padding(.top, 50)
@@ -62,6 +67,7 @@ struct ContentView: View {
                 
                 Text(tip ?? "")
                     .font(.system(size: 54))
+                    .accessibilityIdentifier("tipText")
                 
                 Spacer()
                     .navigationTitle("Tip Calculator")

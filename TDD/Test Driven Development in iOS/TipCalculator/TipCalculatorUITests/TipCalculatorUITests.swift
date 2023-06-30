@@ -7,7 +7,8 @@
 
 import XCTest
 
-final class contentView_가_보일_때: XCTestCase {
+// class는 context로 정함(상황)
+class contentView_가_보일_때: XCTestCase {
 
     private var app: XCUIApplication!
     
@@ -41,5 +42,32 @@ final class contentView_가_보일_때: XCTestCase {
     override func tearDown() { // 각 테스트 종료시에 호출됨
         // clean up function
         // ex: file 생성했다면 삭제
+    }
+}
+
+
+class calculate_팁_버튼이_눌릴때: XCTestCase {
+
+    private var app: XCUIApplication!
+    
+    override func setUp() {
+        app = XCUIApplication()
+        continueAfterFailure = false
+        app.launch()
+        
+        let totalTextField = app.textFields["totalTextField"]
+        totalTextField.tap()
+        totalTextField.typeText("100")
+
+        //context가 팁 버튼 눌릴때임!
+        let calculateTipButton = app.buttons["calculateTipButton"]
+        calculateTipButton.tap()
+    }
+    
+    func test_tip이_화면에_보여야함() {
+        let tipText = app.staticTexts["tipText"]
+        tipText.waitForExistence(timeout: 0.5) // 시간 조금 걸리니까 버튼 누르는 시간 기다림
+        
+        XCTAssertEqual(tipText.label, "$20.00")
     }
 }
