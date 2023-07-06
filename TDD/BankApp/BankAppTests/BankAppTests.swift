@@ -27,7 +27,6 @@ class when_withdraw_money_from_bank_account: XCTestCase {
         XCTAssertEqual(50, bankAccount.balance)
     }
     
-    
     func test_should_throw_insufficient_balance_exception_when_funds_not_available() {
         
         let bankAccount = BankAccount(accountNumber: "1234", amount: 100)
