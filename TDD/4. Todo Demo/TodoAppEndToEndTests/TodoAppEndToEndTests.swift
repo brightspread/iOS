@@ -95,8 +95,39 @@ class when_user_deletes_a_new_task: XCTestCase {
 //        let cell = app.collectionViews["taskList"].cells.children(matching: .other).element(boundBy: 1)
         let staticText = app.collectionViews["taskList"].cells.staticTexts["Mow the lawn"]
         staticText.swipeLeft()
-        app.collectionViews["taskList"].buttons["제거"].tap()
+        app.collectionViews["taskList"].buttons["Delete"].tap()
         XCTAssertFalse(staticText.exists)
+    }
+    
+    override func tearDown() {
+        Springboard.deleteApp()
+    }
+}
+
+
+class when_user_marks_task_as_favorite: XCTestCase {
+
+    private var app: XCUIApplication!
+    
+    override func setUp() {
+        app = XCUIApplication()
+        continueAfterFailure = false
+        app.launch()
+        
+        let titleTextField = app.textFields["titleTextField"]
+        titleTextField.tap()
+        titleTextField.typeText("Mow the lawn")
+        
+        let saveTaskButton = app.buttons["saveTaskButton"]
+        saveTaskButton.tap()
+    }
+
+    func test_should_displayed_updated_task_on_screen_as_favorite() {
+        app.collectionViews["taskList"].cells.staticTexts["Medium"].tap()
+        app.images["favoriteImage"].tap()
+        app.buttons["closeButton"].tap()
+        
+        XCTAssertTrue(app.collectionViews["taskList"].cells.images["좋아요"].exists)
     }
     
     override func tearDown() {

@@ -19,8 +19,8 @@ class Springboard {
         let appIcon = springboard.icons.matching(identifier: "TodoApp").firstMatch // 앱 이름
         appIcon.press(forDuration: 1.3) // 롱프레스
         
-        let _ = springboard.buttons["앱 제거"].waitForExistence(timeout: 1.0)
-        springboard.buttons["앱 제거"].tap()
+        let _ = springboard.buttons["Remove app"].waitForExistence(timeout: 1.0)
+        springboard.buttons["Remove app"].tap()
         
         let deleteButton = springboard.alerts.buttons["앱 삭제"].firstMatch
         if deleteButton.waitForExistence(timeout: 5) {
