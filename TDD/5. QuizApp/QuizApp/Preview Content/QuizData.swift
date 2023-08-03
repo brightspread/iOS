@@ -10,7 +10,6 @@ import Foundation
 class QuizData {
     
     static func loadQuizDTOs() -> [QuizDTO] {
-        
         // read the json file
         guard let path = Bundle.main.path(forResource: "quizes", ofType: "json") else {
             fatalError("Path for quizes.json was not found")

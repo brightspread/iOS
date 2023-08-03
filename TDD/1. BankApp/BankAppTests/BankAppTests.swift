@@ -21,7 +21,6 @@ class when_deposit_money_into_bank_account: XCTestCase {
 class when_withdraw_money_from_bank_account: XCTestCase {
     
     func test_should_withdraw_amount_successfully() {
-        
         let bankAccount = BankAccount(accountNumber: "1234", amount: 100)
         try! bankAccount.withdraw(50)
         XCTAssertEqual(50, bankAccount.balance)

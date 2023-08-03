@@ -8,9 +8,9 @@
 import XCTest
 @testable import QuizApp
 
-final class when_loading_a_quiz: XCTestCase {
 
-    func test_should_make_sure_quiz_total_points_are_calculated_correctly() {
+final class 퀴즈가_로딩_될_때: XCTestCase {
+    func test_전체_점수가_정확하게_계산되어야함() {
         let quizesDTOs = QuizData.loadQuizDTOs()
         let quizes = quizesDTOs.map(Quiz.init)
         
@@ -21,10 +21,9 @@ final class when_loading_a_quiz: XCTestCase {
         XCTAssertEqual(3, mathQuiz.questions.count)
         XCTAssertEqual(30, mathQuiz.totalPoints)
     }
-    
 }
 
-class when_calculate_student_grade: XCTestCase {
+class 점수를_계산할_때: XCTestCase {
    
     lazy var gradeASubmission: QuizSubmission = {
         var studentSubmission = QuizSubmission(quizId: 1)
@@ -50,8 +49,7 @@ class when_calculate_student_grade: XCTestCase {
         return studentSubmission
     }()
 
-    func test_calculate_grade_successfully_based_on_student_score() {
-        
+    func test_점수에_맞게_등급이_나와야함() {
         let quizesDTOs = QuizData.loadQuizDTOs()
         let quizes = quizesDTOs.map(Quiz.init)
         
@@ -64,7 +62,7 @@ class when_calculate_student_grade: XCTestCase {
         XCTAssertEqual("F", mathQuiz.calculateLetterGrade(score: 42))
     }
     
-    func test_calculate_grade_based_on_student_submission() {
+    func test_답안지에_맞게_등급이_나와야_함() {
         let quizesDTOs = QuizData.loadQuizDTOs()
         let quizes = quizesDTOs.map(Quiz.init)
         

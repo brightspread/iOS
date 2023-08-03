@@ -20,14 +20,12 @@ class Springboard {
         appIcon.press(forDuration: 1.3) // 롱프레스
         
         let _ = springboard.buttons["Remove app"].waitForExistence(timeout: 1.0)
-        springboard.buttons["Remove app"].tap()
+        springboard.buttons["앱 제거"].tap()
         
         let deleteButton = springboard.alerts.buttons["앱 삭제"].firstMatch
         if deleteButton.waitForExistence(timeout: 5) {
             deleteButton.tap()
             springboard.alerts.buttons["삭제"].tap()
         }
-        
-        
     }
 }

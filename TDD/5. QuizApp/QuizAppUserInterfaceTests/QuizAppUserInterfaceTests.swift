@@ -7,10 +7,11 @@
 
 import XCTest
 
+
+// class : Context(문맥)
+
 final class when_app_is_launched: XCTestCase {
-    
     func test_should_display_available_quizzes() {
-        
         let app = XCUIApplication()
         app.launchEnvironment = ["ENV": "TEST"]
         continueAfterFailure = false
