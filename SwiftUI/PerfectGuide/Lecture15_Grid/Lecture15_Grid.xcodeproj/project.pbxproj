@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3FE29412A873B980063C61B /* Lecture13_WebView_BasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE29402A873B980063C61B /* Lecture13_WebView_BasicApp.swift */; };
-		B3FE29432A873B980063C61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE29422A873B980063C61B /* ContentView.swift */; };
-		B3FE29452A873B9A0063C61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE29442A873B9A0063C61B /* Assets.xcassets */; };
-		B3FE29482A873B9A0063C61B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE29472A873B9A0063C61B /* Preview Assets.xcassets */; };
-		B3FE294F2A873BAF0063C61B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE294E2A873BAF0063C61B /* WebView.swift */; };
-		B3FE29512A873D0D0063C61B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE29502A873D0D0063C61B /* WebViewController.swift */; };
-		B3FE29532A873D1E0063C61B /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FE29522A873D1E0063C61B /* WebViewController.storyboard */; };
+		B3FE29612A8743350063C61B /* Lecture15_GridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE29602A8743350063C61B /* Lecture15_GridApp.swift */; };
+		B3FE29632A8743350063C61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE29622A8743350063C61B /* ContentView.swift */; };
+		B3FE29652A8743360063C61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE29642A8743360063C61B /* Assets.xcassets */; };
+		B3FE29682A8743360063C61B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FE29672A8743360063C61B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3FE293D2A873B980063C61B /* Lecture13_WebView_Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lecture13_WebView_Basic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3FE29402A873B980063C61B /* Lecture13_WebView_BasicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture13_WebView_BasicApp.swift; sourceTree = "<group>"; };
-		B3FE29422A873B980063C61B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B3FE29442A873B9A0063C61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B3FE29472A873B9A0063C61B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B3FE294E2A873BAF0063C61B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		B3FE29502A873D0D0063C61B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		B3FE29522A873D1E0063C61B /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
+		B3FE295D2A8743350063C61B /* Lecture15_Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lecture15_Grid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FE29602A8743350063C61B /* Lecture15_GridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture15_GridApp.swift; sourceTree = "<group>"; };
+		B3FE29622A8743350063C61B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3FE29642A8743360063C61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3FE29672A8743360063C61B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3FE293A2A873B980063C61B /* Frameworks */ = {
+		B3FE295A2A8743350063C61B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3FE29342A873B980063C61B = {
+		B3FE29542A8743350063C61B = {
 			isa = PBXGroup;
 			children = (
-				B3FE293F2A873B980063C61B /* Lecture13_WebView_Basic */,
-				B3FE293E2A873B980063C61B /* Products */,
+				B3FE295F2A8743350063C61B /* Lecture15_Grid */,
+				B3FE295E2A8743350063C61B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B3FE293E2A873B980063C61B /* Products */ = {
+		B3FE295E2A8743350063C61B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3FE293D2A873B980063C61B /* Lecture13_WebView_Basic.app */,
+				B3FE295D2A8743350063C61B /* Lecture15_Grid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3FE293F2A873B980063C61B /* Lecture13_WebView_Basic */ = {
+		B3FE295F2A8743350063C61B /* Lecture15_Grid */ = {
 			isa = PBXGroup;
 			children = (
-				B3FE29502A873D0D0063C61B /* WebViewController.swift */,
-				B3FE29522A873D1E0063C61B /* WebViewController.storyboard */,
-				B3FE29402A873B980063C61B /* Lecture13_WebView_BasicApp.swift */,
-				B3FE294E2A873BAF0063C61B /* WebView.swift */,
-				B3FE29422A873B980063C61B /* ContentView.swift */,
-				B3FE29442A873B9A0063C61B /* Assets.xcassets */,
-				B3FE29462A873B9A0063C61B /* Preview Content */,
+				B3FE29602A8743350063C61B /* Lecture15_GridApp.swift */,
+				B3FE29622A8743350063C61B /* ContentView.swift */,
+				B3FE29642A8743360063C61B /* Assets.xcassets */,
+				B3FE29662A8743360063C61B /* Preview Content */,
 			);
-			path = Lecture13_WebView_Basic;
+			path = Lecture15_Grid;
 			sourceTree = "<group>";
 		};
-		B3FE29462A873B9A0063C61B /* Preview Content */ = {
+		B3FE29662A8743360063C61B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B3FE29472A873B9A0063C61B /* Preview Assets.xcassets */,
+				B3FE29672A8743360063C61B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B3FE293C2A873B980063C61B /* Lecture13_WebView_Basic */ = {
+		B3FE295C2A8743350063C61B /* Lecture15_Grid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3FE294B2A873B9A0063C61B /* Build configuration list for PBXNativeTarget "Lecture13_WebView_Basic" */;
+			buildConfigurationList = B3FE296B2A8743360063C61B /* Build configuration list for PBXNativeTarget "Lecture15_Grid" */;
 			buildPhases = (
-				B3FE29392A873B980063C61B /* Sources */,
-				B3FE293A2A873B980063C61B /* Frameworks */,
-				B3FE293B2A873B980063C61B /* Resources */,
+				B3FE29592A8743350063C61B /* Sources */,
+				B3FE295A2A8743350063C61B /* Frameworks */,
+				B3FE295B2A8743350063C61B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Lecture13_WebView_Basic;
-			productName = Lecture13_WebView_Basic;
-			productReference = B3FE293D2A873B980063C61B /* Lecture13_WebView_Basic.app */;
+			name = Lecture15_Grid;
+			productName = Lecture15_Grid;
+			productReference = B3FE295D2A8743350063C61B /* Lecture15_Grid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B3FE29352A873B980063C61B /* Project object */ = {
+		B3FE29552A8743350063C61B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					B3FE293C2A873B980063C61B = {
+					B3FE295C2A8743350063C61B = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = B3FE29382A873B980063C61B /* Build configuration list for PBXProject "Lecture13_WebView_Basic" */;
+			buildConfigurationList = B3FE29582A8743350063C61B /* Build configuration list for PBXProject "Lecture15_Grid" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = B3FE29342A873B980063C61B;
-			productRefGroup = B3FE293E2A873B980063C61B /* Products */;
+			mainGroup = B3FE29542A8743350063C61B;
+			productRefGroup = B3FE295E2A8743350063C61B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3FE293C2A873B980063C61B /* Lecture13_WebView_Basic */,
+				B3FE295C2A8743350063C61B /* Lecture15_Grid */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B3FE293B2A873B980063C61B /* Resources */ = {
+		B3FE295B2A8743350063C61B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FE29532A873D1E0063C61B /* WebViewController.storyboard in Resources */,
-				B3FE29482A873B9A0063C61B /* Preview Assets.xcassets in Resources */,
-				B3FE29452A873B9A0063C61B /* Assets.xcassets in Resources */,
+				B3FE29682A8743360063C61B /* Preview Assets.xcassets in Resources */,
+				B3FE29652A8743360063C61B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3FE29392A873B980063C61B /* Sources */ = {
+		B3FE29592A8743350063C61B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FE294F2A873BAF0063C61B /* WebView.swift in Sources */,
-				B3FE29432A873B980063C61B /* ContentView.swift in Sources */,
-				B3FE29412A873B980063C61B /* Lecture13_WebView_BasicApp.swift in Sources */,
-				B3FE29512A873D0D0063C61B /* WebViewController.swift in Sources */,
+				B3FE29632A8743350063C61B /* ContentView.swift in Sources */,
+				B3FE29612A8743350063C61B /* Lecture15_GridApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B3FE29492A873B9A0063C61B /* Debug */ = {
+		B3FE29692A8743360063C61B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		B3FE294A2A873B9A0063C61B /* Release */ = {
+		B3FE296A2A8743360063C61B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,14 +259,14 @@
 			};
 			name = Release;
 		};
-		B3FE294C2A873B9A0063C61B /* Debug */ = {
+		B3FE296C2A8743360063C61B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Lecture13_WebView_Basic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lecture15_Grid/Preview Content\"";
 				DEVELOPMENT_TEAM = M75V4ZN69S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -292,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "leo.Lecture13-WebView-Basic";
+				PRODUCT_BUNDLE_IDENTIFIER = "leo.Lecture15-Grid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		B3FE294D2A873B9A0063C61B /* Release */ = {
+		B3FE296D2A8743360063C61B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Lecture13_WebView_Basic/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lecture15_Grid/Preview Content\"";
 				DEVELOPMENT_TEAM = M75V4ZN69S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -321,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "leo.Lecture13-WebView-Basic";
+				PRODUCT_BUNDLE_IDENTIFIER = "leo.Lecture15-Grid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3FE29382A873B980063C61B /* Build configuration list for PBXProject "Lecture13_WebView_Basic" */ = {
+		B3FE29582A8743350063C61B /* Build configuration list for PBXProject "Lecture15_Grid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3FE29492A873B9A0063C61B /* Debug */,
-				B3FE294A2A873B9A0063C61B /* Release */,
+				B3FE29692A8743360063C61B /* Debug */,
+				B3FE296A2A8743360063C61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3FE294B2A873B9A0063C61B /* Build configuration list for PBXNativeTarget "Lecture13_WebView_Basic" */ = {
+		B3FE296B2A8743360063C61B /* Build configuration list for PBXNativeTarget "Lecture15_Grid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3FE294C2A873B9A0063C61B /* Debug */,
-				B3FE294D2A873B9A0063C61B /* Release */,
+				B3FE296C2A8743360063C61B /* Debug */,
+				B3FE296D2A8743360063C61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B3FE29352A873B980063C61B /* Project object */;
+	rootObject = B3FE29552A8743350063C61B /* Project object */;
 }
