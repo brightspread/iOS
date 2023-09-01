@@ -74,7 +74,6 @@ struct URLImage: View {
     var body: some View {
         Image(uiImage: loader.image ?? UIImage(systemName: "pencil.circle")!)
             .resizable()
-            .frame(width: 100, height: 100)
-            .aspectRatio(contentMode: .fill)
+            .aspectRatio(contentMode: .fit)
     }
 }

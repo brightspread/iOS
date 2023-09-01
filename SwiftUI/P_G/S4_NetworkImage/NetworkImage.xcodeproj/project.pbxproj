@@ -12,6 +12,7 @@
 		B34E1A582AA1F30900AE0491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34E1A572AA1F30900AE0491 /* Assets.xcassets */; };
 		B34E1A5B2AA1F30900AE0491 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34E1A5A2AA1F30900AE0491 /* Preview Assets.xcassets */; };
 		B34E1A622AA1F3E000AE0491 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E1A612AA1F3E000AE0491 /* WebService.swift */; };
+		B34E1A642AA1F85300AE0491 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E1A632AA1F85300AE0491 /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B34E1A572AA1F30900AE0491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B34E1A5A2AA1F30900AE0491 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B34E1A612AA1F3E000AE0491 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B34E1A632AA1F85300AE0491 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				B34E1A552AA1F30700AE0491 /* ContentView.swift */,
 				B34E1A572AA1F30900AE0491 /* Assets.xcassets */,
 				B34E1A592AA1F30900AE0491 /* Preview Content */,
+				B34E1A632AA1F85300AE0491 /* UserDetailView.swift */,
 			);
 			path = NetworkImage;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34E1A642AA1F85300AE0491 /* UserDetailView.swift in Sources */,
 				B34E1A622AA1F3E000AE0491 /* WebService.swift in Sources */,
 				B34E1A562AA1F30700AE0491 /* ContentView.swift in Sources */,
 				B34E1A542AA1F30700AE0491 /* NetworkImageApp.swift in Sources */,
