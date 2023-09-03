@@ -20,6 +20,8 @@
 		B3E792222AA4519500893517 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792212AA4519500893517 /* FeedCell.swift */; };
 		B3E792242AA45E0000893517 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792232AA45E0000893517 /* SearchBar.swift */; };
 		B3E792262AA45EE900893517 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792252AA45EE900893517 /* PostGridView.swift */; };
+		B3E792282AA4603C00893517 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792272AA4603C00893517 /* UserCell.swift */; };
+		B3E7922A2AA4604100893517 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792292AA4604100893517 /* UserListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		B3E792212AA4519500893517 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B3E792232AA45E0000893517 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		B3E792252AA45EE900893517 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		B3E792272AA4603C00893517 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		B3E792292AA4604100893517 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				B3E792252AA45EE900893517 /* PostGridView.swift */,
+				B3E792272AA4603C00893517 /* UserCell.swift */,
+				B3E792292AA4604100893517 /* UserListView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -316,9 +322,11 @@
 				B3E791F62AA44C9900893517 /* InstagramSwiftUITutorialApp.swift in Sources */,
 				B3E792202AA44F0B00893517 /* UploadPostView.swift in Sources */,
 				B3E7921C2AA44EFC00893517 /* ProfileView.swift in Sources */,
+				B3E792282AA4603C00893517 /* UserCell.swift in Sources */,
 				B3E792242AA45E0000893517 /* SearchBar.swift in Sources */,
 				B3E792162AA44E8600893517 /* MainTabView.swift in Sources */,
 				B3E792222AA4519500893517 /* FeedCell.swift in Sources */,
+				B3E7922A2AA4604100893517 /* UserListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

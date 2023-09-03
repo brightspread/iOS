@@ -13,7 +13,7 @@ struct PostGridView: View {
     
     var body: some View {
         LazyVGrid(columns: items, spacing: 2) {
-            ForEach(0..<10, id: \.self) { _ in
+            ForEach(0..<10) { _ in
                 Image("ethan-hoover")
                     .resizable()
                     .scaledToFill()
