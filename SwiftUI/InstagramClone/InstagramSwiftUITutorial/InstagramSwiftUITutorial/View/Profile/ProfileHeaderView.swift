@@ -21,9 +21,9 @@ struct ProfileHeaderView: View {
                 Spacer()
                 
                 HStack(spacing: 16) {
-                    UserStatView()
-                    UserStatView()
-                    UserStatView()
+                    UserStatView(value: 1, title: "Post")
+                    UserStatView(value: 2, title: "Follwers")
+                    UserStatView(value: 4, title: "Following")
                 }.padding(.trailing)
             }
             
@@ -53,22 +53,6 @@ struct ProfileHeaderView: View {
                 Spacer()
             }.padding(.top)
         }
-    }
-}
-
-struct UserStatView: View {
-    var body: some View {
-        VStack {
-            Text("2")
-                .font(.system(size: 15, weight: .semibold))
-            
-            Text("Followers")
-                .font(.system(size: 15))
-            
-        }
-        .frame(width: 80, alignment: .center)
-        // 프레임 설정을 안하면 Text를 기반으로 width를 맞추지만,
-        // 여기서는 80으로 고정한다
     }
 }
 
