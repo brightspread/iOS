@@ -19,6 +19,7 @@
 		B3E792202AA44F0B00893517 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7921F2AA44F0B00893517 /* UploadPostView.swift */; };
 		B3E792222AA4519500893517 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792212AA4519500893517 /* FeedCell.swift */; };
 		B3E792242AA45E0000893517 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792232AA45E0000893517 /* SearchBar.swift */; };
+		B3E792262AA45EE900893517 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792252AA45EE900893517 /* PostGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B3E7921F2AA44F0B00893517 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		B3E792212AA4519500893517 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B3E792232AA45E0000893517 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B3E792252AA45EE900893517 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 		B3E792102AA44DD900893517 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				B3E792252AA45EE900893517 /* PostGridView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				B3E7921A2AA44EF200893517 /* SearchView.swift in Sources */,
 				B3E792182AA44EBE00893517 /* FeedView.swift in Sources */,
+				B3E792262AA45EE900893517 /* PostGridView.swift in Sources */,
 				B3E7921E2AA44F0500893517 /* NotificationsView.swift in Sources */,
 				B3E791F82AA44C9900893517 /* ContentView.swift in Sources */,
 				B3E791F62AA44C9900893517 /* InstagramSwiftUITutorialApp.swift in Sources */,
