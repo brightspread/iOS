@@ -9,34 +9,39 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-        TabView {
-            FeedView()
-                .tabItem {
-                    Image(systemName: "house")
-                }
-            
-            SearchView()
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                }
-
-            UploadPostView()
-                .tabItem {
-                    Image(systemName: "plus.square")
-                }
-
-            NotificationsView()
-                .tabItem {
-                    Image(systemName: "heart")
-                }
-
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person")
-                }
+        NavigationView {
+            TabView {
+                FeedView()
+                    .tabItem {
+                        Image(systemName: "house")
+                    }
+                
+                SearchView()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                    }
+                
+                UploadPostView()
+                    .tabItem {
+                        Image(systemName: "plus.square")
+                    }
+                
+                NotificationsView()
+                    .tabItem {
+                        Image(systemName: "heart")
+                    }
+                
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person")
+                    }
+            }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .accentColor(.black) // 고른 컬러
         }
-        .accentColor(.black) // 고른 컬러
     }
+    
 }
 
 struct MainTabView_Previews: PreviewProvider {
