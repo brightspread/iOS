@@ -24,6 +24,7 @@
 		B3E7922A2AA4604100893517 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E792292AA4604100893517 /* UserListView.swift */; };
 		B3E7922C2AA4648300893517 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7922B2AA4648300893517 /* Extensions.swift */; };
 		B3E7922E2AA4668A00893517 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7922D2AA4668A00893517 /* NotificationCell.swift */; };
+		B3E792302AA4689B00893517 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7922F2AA4689B00893517 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		B3E792292AA4604100893517 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		B3E7922B2AA4648300893517 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B3E7922D2AA4668A00893517 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		B3E7922F2AA4689B00893517 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				B3E7921B2AA44EFC00893517 /* ProfileView.swift */,
+				B3E7922F2AA4689B00893517 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				B3E791F82AA44C9900893517 /* ContentView.swift in Sources */,
 				B3E791F62AA44C9900893517 /* InstagramSwiftUITutorialApp.swift in Sources */,
 				B3E792202AA44F0B00893517 /* UploadPostView.swift in Sources */,
+				B3E792302AA4689B00893517 /* ProfileHeaderView.swift in Sources */,
 				B3E7921C2AA44EFC00893517 /* ProfileView.swift in Sources */,
 				B3E792282AA4603C00893517 /* UserCell.swift in Sources */,
 				B3E7922C2AA4648300893517 /* Extensions.swift in Sources */,
